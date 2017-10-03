@@ -11,7 +11,7 @@ namespace StockServer
             //For enable Cross Domain Origin
             app.UseCors(CorsOptions.AllowAll);
 
-            //Mapps SignalR to defaul route /signalr/hubs/
+            //Maps SignalR to defaul route /signalr/hubs/
             app.MapSignalR();
         }
     }

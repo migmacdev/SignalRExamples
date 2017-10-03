@@ -13,7 +13,7 @@ namespace StockServer
             //usar http://*:8080 or http://+:8080. 
             using (WebApp.Start<Startup>(url))
             {
-                Console.WriteLine("Servidor en ejecución");
+                Console.WriteLine("Running Server, Run StockClient as client");
                 Console.ReadLine();
             }
         }

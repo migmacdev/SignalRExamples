@@ -1,15 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServer", "ChatServer\ChatServer.csproj", "{0E18C57F-67ED-4884-BA9E-ECA794354787}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple ChatServer", "ChatServer\Simple ChatServer.csproj", "{0E18C57F-67ED-4884-BA9E-ECA794354787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{96949498-C333-4B7D-A033-3D7DB9AC28C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple ChatClient", "ClientApp\Simple ChatClient.csproj", "{96949498-C333-4B7D-A033-3D7DB9AC28C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockServer", "StockServer\StockServer.csproj", "{04D759FA-79D7-43AC-825E-A45D802A2E79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockClient", "StockClient\StockClient.csproj", "{2374BA4B-AC23-43B4-A412-3A87983AFF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServerStrongTyped", "ChatServerStrongTyped\ChatServerStrongTyped.csproj", "{FD717B27-9302-4E19-A9DC-A8C4062E7D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClientStrongTyped", "ChatClientStrongTyped\ChatClientStrongTyped.csproj", "{5A84A5FC-5F51-4830-9E88-4905531B8CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongTypedClassLibrary", "StrongTypedClassLibrary\StrongTypedClassLibrary.csproj", "{202A0E83-AC45-4799-BB33-5C247D14F554}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{2374BA4B-AC23-43B4-A412-3A87983AFF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2374BA4B-AC23-43B4-A412-3A87983AFF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2374BA4B-AC23-43B4-A412-3A87983AFF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD717B27-9302-4E19-A9DC-A8C4062E7D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD717B27-9302-4E19-A9DC-A8C4062E7D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD717B27-9302-4E19-A9DC-A8C4062E7D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD717B27-9302-4E19-A9DC-A8C4062E7D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A84A5FC-5F51-4830-9E88-4905531B8CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A84A5FC-5F51-4830-9E88-4905531B8CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A84A5FC-5F51-4830-9E88-4905531B8CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A84A5FC-5F51-4830-9E88-4905531B8CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202A0E83-AC45-4799-BB33-5C247D14F554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202A0E83-AC45-4799-BB33-5C247D14F554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202A0E83-AC45-4799-BB33-5C247D14F554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202A0E83-AC45-4799-BB33-5C247D14F554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

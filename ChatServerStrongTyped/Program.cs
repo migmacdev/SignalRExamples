@@ -1,7 +1,11 @@
 ﻿using Microsoft.Owin.Hosting;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ChatServer
+namespace ChatServerStrongTyped
 {
     class Program
     {
@@ -13,7 +17,7 @@ namespace ChatServer
             //usar http://*:8080 or http://+:8080. 
             using (WebApp.Start<Startup>(url))
             {
-                Console.WriteLine("Running Server, Run \"Simple ChatClient\" as client ");
+                Console.WriteLine("Running Server, Run ChatClientStrongTyped as client");
                 Console.ReadLine();
             }
         }
