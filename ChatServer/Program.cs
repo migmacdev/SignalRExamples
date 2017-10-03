@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Owin.Hosting;
+using System;
 
 namespace ChatServer
 {
@@ -10,6 +7,15 @@ namespace ChatServer
     {
         static void Main(string[] args)
         {
+            string url = @"http://localhost:8080/";
+            //Binding app a la url y puerto
+            //Para hacer binding a todas las direcciones
+            //usar http://*:8080 or http://+:8080. 
+            using (WebApp.Start<Startup>(url))
+            {
+                Console.WriteLine("Servidor en ejecución");
+                Console.ReadLine();
+            }
         }
     }
 }
