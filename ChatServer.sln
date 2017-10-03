@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClientStrongTyped", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongTypedClassLibrary", "StrongTypedClassLibrary\StrongTypedClassLibrary.csproj", "{202A0E83-AC45-4799-BB33-5C247D14F554}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServerStrongTypedDebLog", "ChatServerStrongTypedDebLog\ChatServerStrongTypedDebLog.csproj", "{74C12E98-E7C5-46BB-93B5-26A0C4DFA14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClientStrongTypedDebLog", "ChatClientStrongTypedDebLog\ChatClientStrongTypedDebLog.csproj", "{4DBB745D-7BAB-48B0-BCD3-605E078BA87F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{202A0E83-AC45-4799-BB33-5C247D14F554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202A0E83-AC45-4799-BB33-5C247D14F554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202A0E83-AC45-4799-BB33-5C247D14F554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C12E98-E7C5-46BB-93B5-26A0C4DFA14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C12E98-E7C5-46BB-93B5-26A0C4DFA14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C12E98-E7C5-46BB-93B5-26A0C4DFA14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C12E98-E7C5-46BB-93B5-26A0C4DFA14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBB745D-7BAB-48B0-BCD3-605E078BA87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBB745D-7BAB-48B0-BCD3-605E078BA87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBB745D-7BAB-48B0-BCD3-605E078BA87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBB745D-7BAB-48B0-BCD3-605E078BA87F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
