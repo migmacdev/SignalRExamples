@@ -32,8 +32,14 @@ namespace StockClient
             //Event subscription to UpdateStockPrice function
             _hub.On("UpdateStockPrice", x => OnReceiveStock(x));
 
-            while ((Console.ReadLine()) != null)
+            //While loop to keep running
+            while (true)
             {
+                //Desubscribes if an blank line is detected
+                if (Console.ReadLine() == "")
+                {
+                    _hub.Invoke("DesuscribeToStock", stockSubs);
+                }
             }
         }
 

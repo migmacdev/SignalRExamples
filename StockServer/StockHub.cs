@@ -31,5 +31,12 @@ namespace StockServer
             //Returns value to the caller, in a strong typed way
             Groups.Add(Context.ConnectionId, stockName);
         }
+
+        [HubMethodName("DesuscribeToStock")]
+        public void DesuscribeToStock(string stockName)
+        {
+            //Returns value to the caller, in a strong typed way
+            Groups.Remove(Context.ConnectionId, stockName);
+        }
     }
 }
