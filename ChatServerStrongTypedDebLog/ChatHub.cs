@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ChatServerStrongTyped
 {
     [HubName("ChatHub")]
-    public class ChatHub : Hub
+    public class ChatHub : Hub<IClient>
     {
 
         public override Task OnConnected()
