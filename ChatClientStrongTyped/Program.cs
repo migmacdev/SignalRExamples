@@ -36,7 +36,7 @@ namespace ChatClientStrongTyped
             while ((line = Console.ReadLine()) != null)
             {
                 msg.MsgBody = line;
-                _hub.Invoke<IEnumerable<ChatMsg>>("SendMsg", msg).Wait();
+                _hub.Invoke<ChatMsg>("SendMsg", msg).Wait();
             }
         }
 

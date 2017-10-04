@@ -22,7 +22,8 @@ namespace ChatClientStrongTyped
             var querystringData = new Dictionary<string, string>();
             querystringData.Add("chatversion", "1.0");
 
-            var connection = new HubConnection(url, querystringData);
+            //For sending querystrings and a custom path in signalR
+            var connection = new HubConnection(url + "custompath", querystringData, false);
 
             //For client logging
             //connection.TraceLevel = TraceLevels.All;
