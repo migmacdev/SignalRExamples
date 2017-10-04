@@ -24,6 +24,11 @@ namespace StockClient
             var stocks = _hub.Invoke<IEnumerable<Stock>>("GetAllStocks").Result;
             Console.WriteLine("Got stocks------------------");
 
+            string stockSubs;
+            Console.WriteLine("Enter name of stock to subscribe to");
+            stockSubs = Console.ReadLine();
+
+            _hub.Invoke("SubscribeToStock", stockSubs);
             //Event subscription to UpdateStockPrice function
             _hub.On("UpdateStockPrice", x => OnReceiveStock(x));
 

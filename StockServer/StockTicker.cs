@@ -33,6 +33,7 @@ namespace StockServer
             var stocks = new List<Stock>
             {
                 new Stock { Symbol = "MSFT", Price = 30.31m },
+                new Stock { Symbol = "NSQ", Price = 211.29m },
             };
             stocks.ForEach(stock => _stocks.TryAdd(stock.Symbol, stock));
         
@@ -94,7 +95,8 @@ namespace StockServer
 
         private void BroadcastStockPrice(Stock stock)
         {
-            Clients.All.UpdateStockPrice(stock);
+            Clients.Group(stock.Symbol).UpdateStockPrice(stock);
+            //Clients.All.UpdateStockPrice(stock);
         }
 
     }

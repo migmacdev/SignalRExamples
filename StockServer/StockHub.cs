@@ -24,5 +24,12 @@ namespace StockServer
             //Returns value to the caller, in a strong typed way
             return _stockTicker.GetAllStocks();
         }
+
+        [HubMethodName("SubscribeToStock")]
+        public void SubscribeToStock(string stockName)
+        {
+            //Returns value to the caller, in a strong typed way
+            Groups.Add(Context.ConnectionId, stockName);
+        }
     }
 }
