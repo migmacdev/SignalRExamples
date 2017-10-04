@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ChatServerStrongTyped
 {
     [HubName("ChatHub")]
-    public class ChatHub : Hub<IClient>
+    public class ChatHub : Hub
     {
 
         public override Task OnConnected()
@@ -33,6 +33,7 @@ namespace ChatServerStrongTyped
         [HubMethodName("SendMsg")]
         public void SendMsg(ChatMsg msg)
         {
+            Console.WriteLine("Request from " + Clients.Caller.username);
             //Sends Msg to all clients but the caller
             Clients.Others.ReceiveMsg(msg);
         }

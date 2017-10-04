@@ -8,6 +8,8 @@ namespace StrongTypedClassLibrary
 {
     public interface IClient
     {
+        string username { get; set; }
+
         void ReceiveMsg(ChatMsg msg);
     }
 }

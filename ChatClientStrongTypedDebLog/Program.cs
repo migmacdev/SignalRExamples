@@ -47,6 +47,9 @@ namespace ChatClientStrongTyped
             Console.WriteLine("Enter Name:");
             userName = Console.ReadLine();
 
+            //Save state data
+            _hub["username"] = userName;
+
             Console.WriteLine("Welcome to the chat " + userName + "\n");
 
             //Msg object to send
