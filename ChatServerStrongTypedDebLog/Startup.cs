@@ -17,6 +17,9 @@ namespace ChatServerStrongTyped
             hubConfiguration.EnableDetailedErrors = true;
             hubConfiguration.EnableJavaScriptProxies = false;
 
+            //Adding a pipeline module
+            GlobalHost.HubPipeline.AddModule(new LoggingPipelineModule());
+
             //Mapping SignalR to different path and a different configuration
             app.MapSignalR("/custompath", hubConfiguration);
         }
