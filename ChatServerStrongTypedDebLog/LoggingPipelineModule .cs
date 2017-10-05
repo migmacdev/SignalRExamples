@@ -20,5 +20,10 @@ namespace ChatServerStrongTyped
             Debug.WriteLine("<= Invoking " + context.Invocation.Method + " on client hub " + context.Invocation.Hub);
             return base.OnBeforeOutgoing(context);
         }
+
+        protected override void OnIncomingError(ExceptionContext exceptionContext, IHubIncomingInvokerContext invokerContext)
+        {
+            base.OnIncomingError(exceptionContext, invokerContext);
+        }
     }
 }
